@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Example</title>
+    <meta charset="utf-8">
+    <title>Welcome to this Page!</title>
 </head>
 <body>
+
     <h1>Testing PHP</h1>
-    <?php
-        echo "WTF?\n";
-    ?>
+
 </body>
 </html>
