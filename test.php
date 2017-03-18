@@ -5,8 +5,13 @@
     <title>Welcome to this Page!</title>
 </head>
 <body>
+<h1>Testing PHP</h1>
+<pre>
+    <?php
+    print_r($_SERVER);
+    ?>
+</pre>
 
-    <h1>Testing PHP</h1>
 
 </body>
 </html>
