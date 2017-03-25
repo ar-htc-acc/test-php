@@ -2,37 +2,44 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Welcome to this Page!</title>
+    <title>Product Cost Calculator</title>
 </head>
 <body>
 
-<h3>Please complete this form to submit your feed back:</h3>
-<form action="handle.php" method="post">
-    <p>
-        Name:
-        <select name="title" required>
-            <option value="Mr.">Mr.</option>
-            <option value="Mrs.">Mrs.</option>
-            <option value="Ms.">Ms.</option>
-        </select>
-        <input type="text" name="name" size="20" required>
-    </p>
-    <p>
-        Email Address: <input type="email" name="email" size="20" required>
-    </p>
-    <p>
-        Response: This is
-        <input type="radio" name="response" value="excellent" required> excellent
-        <input type="radio" name="response" value="okay" required> okay
-        <input type="radio" name="response" value="boring" required> boring
-    </p>
-    Comments:
-    <p>
-        <textarea name="comments" rows="3" cols="30" required></textarea>
-    </p>
-
-    <input type="submit" name="submit" value="Send My Feedback">
-</form>
+<div>
+    <p>Fill out this form to calculate the total cost:</p>
+    <form action="handle_calc.php" method="post">
+        <p>
+            Price:
+            <input type="text" name="price" size="5">
+        </p>
+        <p>
+            Quantity:
+            <input type="number" name="quantity" size="5" min="1" value="1">
+        </p>
+        <p>
+            Discount:
+            <input type="text" name="discount" size="5">
+        </p>
+        <p>
+            Tax:
+            <input type="text" name="tax" size="1"> (%)
+        </p>
+        <p>
+            Shipping method:
+            <select name="shipping">
+                <option value="5.00">Slow and steady</option>
+                <option value="8.95">Put a move on it.</option>
+                <option value="19.36">I need it yesterday!</option>
+            </select>
+        </p>
+        <p>
+            Number of payments to make:
+            <input type="number" name="payments" size="3" min="1" value="1">
+        </p>
+        <input type="submit" name="submit" value="Calculate!">
+    </form>
+</div>
 
 </body>
 </html>
